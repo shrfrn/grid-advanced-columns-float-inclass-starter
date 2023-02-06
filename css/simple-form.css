@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(239, 239, 239);
+}
+
+h1 {
+    width: max-content;
+    margin: 40px auto 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.simple-form {
+    width: 300px;
+    height: 300px;
+
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    margin: 100px auto;
+}

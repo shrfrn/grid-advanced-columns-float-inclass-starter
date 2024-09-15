@@ -33,3 +33,12 @@ p span {
     font-weight: bold;
     font-size: 24px;
 }
+
+/* p:nth-last-of-type(2) {
+    background-size: 7px 7px;
+    background-image: repeating-linear-gradient(-45deg, #ccc 0, #ccc 0.9000000000000001px, #ffffff 0, #ffffff 50%);
+}
+
+img {
+    opacity: .3;
+} */

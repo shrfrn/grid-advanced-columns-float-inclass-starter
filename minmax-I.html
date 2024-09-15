@@ -7,15 +7,69 @@
         <link rel="stylesheet" href="css/minmax-I.css">
         <title>minmax1</title>
     </head>
-    <body>
+    <body onload="updateWidth()" onresize="updateWidth()">
         <h1>Using the <span>minmax()</span> function</h1>
         <section class="grid-container">
-            <article class="item item1">1</article>
-            <article class="item item2">2</article>
-            <article class="item item3">3</article>
-            <article class="item item4">4</article>
-            <article class="item item5">5</article>
-            <article class="item item6">6</article>
+
+            <article class="item">
+                <span>1</span>
+                <span class="width"></span>
+            </article>
+
+            <article class="item">
+                <span>2</span>
+                <span class="width"></span>
+            </article>
+
+            <article class="item">
+                <span>3</span>
+                <span class="width"></span>
+            </article>
+
+            <article class="item">
+                <span>4</span>
+                <span class="width"></span>
+            </article>
+
+            <article class="item">
+                <span>5</span>
+                <span class="width"></span>
+            </article>
+
+            <article class="item">
+                <span>6</span>
+                <span class="width"></span>
+            </article>
+
         </section>
-    </body>
+        <script>
+            function setAxis(){
+                const elFlexbox = document.querySelector('.flex-container')
+                const style = getComputedStyle(elFlexbox)
+                
+                updateWidth()
+    
+                if(style.display !== 'flex'){
+                    elFlexbox.classList.add('hidden')
+                    return
+                } else {
+                    elFlexbox.classList.remove('hidden')
+                }
+    
+                if(style.flexDirection === 'column' || style.flexDirection === 'column-reverse'){
+                    elFlexbox.classList.add('column')
+                } else {
+                    elFlexbox.classList.remove('column')
+                }
+            }
+    
+            function updateWidth(){
+                var elWidths = document.querySelectorAll('.width')
+    
+                for(var i = 0; i < elWidths.length; i++){
+                    elWidths[i].innerText = elWidths[i].parentElement.offsetWidth + 'px'
+                }
+            }
+        </script>
+        </body>
 </html>

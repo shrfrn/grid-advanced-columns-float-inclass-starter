@@ -32,8 +32,18 @@ h1 span {
 }
 
 .item {
+    position: relative;
     font-size: 3em;
     padding: 10px;
     background-color: rgb(192, 202, 214);
     color: whitesmoke;
+}
+
+.width {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+
+    font-size: .7rem;
+    font-family: monospace;
 }

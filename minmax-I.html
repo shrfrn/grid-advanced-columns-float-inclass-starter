@@ -43,26 +43,6 @@
 
         </section>
         <script>
-            function setAxis(){
-                const elFlexbox = document.querySelector('.flex-container')
-                const style = getComputedStyle(elFlexbox)
-                
-                updateWidth()
-    
-                if(style.display !== 'flex'){
-                    elFlexbox.classList.add('hidden')
-                    return
-                } else {
-                    elFlexbox.classList.remove('hidden')
-                }
-    
-                if(style.flexDirection === 'column' || style.flexDirection === 'column-reverse'){
-                    elFlexbox.classList.add('column')
-                } else {
-                    elFlexbox.classList.remove('column')
-                }
-            }
-    
             function updateWidth(){
                 var elWidths = document.querySelectorAll('.width')
     

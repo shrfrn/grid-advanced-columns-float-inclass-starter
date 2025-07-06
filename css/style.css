@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     color: #555;
     font-family: sans-serif;
     text-align: center;
 }
+
 .grid-container{
     display: grid;
     gap: 10px;
@@ -22,25 +24,31 @@ body {
     width: max-content;
     margin: 60px auto;
 }
+
 .item{
+    padding: 15px;
     background-color: lightskyblue;
+    
     font-weight: bold;
     font-size: 2em;
-    padding: 15px;
 }
+
 /* .item4 {
     background-color: lightgoldenrodyellow;
     grid-column: 6;
 } */
+
 /* .item7 {
     background-color: lightgoldenrodyellow;
     grid-column: 4 / span 2;
     grid-row: span 2;
 } */
+
 /* .item14 {
     background-color: lightgoldenrodyellow;
     grid-column: 3;
 } */
+
 /* .item24 {
     background-color: lightgoldenrodyellow;
     grid-column: 3;

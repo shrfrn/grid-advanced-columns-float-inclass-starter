@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0
 }
+
 .grid-container{
     display: grid;
     place-content: center;
@@ -25,6 +27,7 @@ body {
     /* grid-auto-rows: 80px; */
     /* grid-auto-flow: dense; */
 }
+
 .item{
     background-color: lightskyblue;
     padding: 15px;
